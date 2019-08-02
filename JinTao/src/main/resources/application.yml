@@ -1,0 +1,14 @@
+#yml文件是springBoot程序中最为重要的核心配置文件，一般用来整合第三方框架时使用
+server:
+  port: 8091 #端口号
+  servlet:
+    context-path: / #默认的发布路径
+#案列1：为属性赋值 yml中可以写中文，但是开发时一般不用
+jdbc:
+  url: mysql的url
+  driverName: 数据库名
+  username: 用户名
+#案例2：为属性批量赋值
+jdbcB:
+  jdbcName: mysql
+  jdbcDriver: mysql驱动
