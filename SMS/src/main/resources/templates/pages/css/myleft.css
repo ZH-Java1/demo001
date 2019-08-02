@@ -1,0 +1,26 @@
+/* CSS Document */
+
+body {
+	margin:0px;
+	padding:0px;
+	font-size: 12px;
+}
+a{ text-decoration:none}
+ul{ list-style:none}
+#navigation{ padding-left:0px}
+#navigation a.head {
+	cursor:pointer;
+	background:url(images/main_34.gif) no-repeat scroll;
+	display:block;
+	font-weight:bold;
+	margin:0px;
+	padding:5px 0 5px;
+	text-align:center;
+	font-size:12px;
+	text-decoration:none;
+}
+.head ul li{cursor:hand}
+a:link {color: #ffffff}		/* 未访问的链接 */
+a:visited {color: #fffffff}	/* 已访问的链接 */
+a:hover {color: #ffffff}	/* 鼠标移动到链接上 */
+a:active {color: #ffffff}

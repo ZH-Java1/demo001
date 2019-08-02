@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script language="javascript" src="../js/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/base_css.css" />
+<link rel="stylesheet" type="text/css" href="../css/table_css.css" />
+<script language="javascript" src="../js/table.js"></script>
+<script language="javascript">
+$(document).ready(function(){
+	/*$('#datetime').daterangepicker( {
+	  presetRanges: [
+		{text: 'My Range', dateStart: '03/07/08', dateEnd: 'Today' }
+	  ]
+	 } );*/
+	 $("#datetime").click(function(){
+	 	alert(123);
+	 })
+})
+</script>
+</head>
+
+<body>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="24" bgcolor="#353c44"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="3%" height="19" valign="bottom"><div align="center"><img src="../images/tb.gif" width="14" height="14" /></div></td>
+                <td width="94%" valign="bottom"><span class="table_head"> 未处理预警列表</span></td>
+              </tr>
+            </table></td>
+            
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#a8c7ce" onmouseover="changeto()"  onmouseout="changeback()">
+      <tr>
+		<td width="4%" height="20" bgcolor="d3eaef" class="table_head_td"><div align="center"><span class="table_body_head_td">类别</span></div></td>
+        <td width="6%" height="20" bgcolor="d3eaef" class="table_head_td"><div align="center"><span class="table_body_head_td">入库单号</span></div></td>
+        <td width="6%" height="20" bgcolor="d3eaef" class="table_head_td"><div align="center"><span class="table_body_head_td">承办中队</span></div></td>
+        <td width="6%" height="20" bgcolor="d3eaef" class="table_head_td"><div align="center"><span class="table_body_head_td">当事人</span></div></td>
+        <td width="8%" height="20" bgcolor="d3eaef" class="table_head_td"><div align="center"><span class="table_body_head_td">查扣日期</span></div></td>
+        <td width="11%" height="20" bgcolor="d3eaef" class="table_head_td"><div align="center"><span class="table_body_head_td">剩余天数</span></div></td>
+        <td width="12%" height="20" bgcolor="d3eaef" class="table_head_td"><div align="center"><span class="table_body_head_td">基本操作</span></div></td>
+      </tr>
+      <tr>
+		<td height="20" bgcolor="#FFFFFF" class="table_head_td"><div align="center"><span class="table_body_td">查扣</span></div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_head_td"><div align="center"><span class="table_body_td">11001100</span></div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">一中队</div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">张三</div></td>
+		<td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">2014-10-15</div></td>
+		<td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">3</div></td>
+        <td height="20" bgcolor="#FFFFFF"><div align="center" class="table_link"> <a href="ckinfo.html">出库</a> |<a href="kcinfo2.html"> 查看</a></div></td>
+      </tr>
+	  <tr>
+		<td height="20" bgcolor="#FFFFFF" class="table_head_td"><div align="center"><span class="table_body_td">查扣</span></div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_head_td"><div align="center"><span class="table_body_td">11001100</span></div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">一中队</div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">张三</div></td>
+		<td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">2014-10-15</div></td>
+		<td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">3</div></td>
+        <td height="20" bgcolor="#FFFFFF"><div align="center" class="table_link"> <a href="ckinfo.html">出库</a> |<a href="kcinfo2.html"> 查看</a></div></td>
+      </tr>
+	  <tr>
+		<td height="20" bgcolor="#FFFFFF" class="table_head_td"><div align="center"><span class="table_body_td">查扣</span></div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_head_td"><div align="center"><span class="table_body_td">11001100</span></div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">一中队</div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">张三</div></td>
+		<td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">2014-10-15</div></td>
+		<td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">3</div></td>
+        <td height="20" bgcolor="#FFFFFF"><div align="center" class="table_link"> <a href="ckinfo.html">出库</a> |<a href="kcinfo2.html"> 查看</a></div></td>
+      </tr>
+	  <tr>
+		<td height="20" bgcolor="#FFFFFF" class="table_head_td"><div align="center"><span class="table_body_td">查扣</span></div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_head_td"><div align="center"><span class="table_body_td">11001100</span></div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">一中队</div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">张三</div></td>
+		<td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">2014-10-15</div></td>
+		<td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">3</div></td>
+        <td height="20" bgcolor="#FFFFFF"><div align="center" class="table_link"> <a href="ckinfo.html">出库</a> |<a href="kcinfo2.html"> 查看</a></div></td>
+      </tr>
+	  <tr>
+		<td height="20" bgcolor="#FFFFFF" class="table_head_td"><div align="center"><span class="table_body_td">查扣</span></div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_head_td"><div align="center"><span class="table_body_td">11001100</span></div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">一中队</div></td>
+        <td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">张三</div></td>
+		<td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">2014-10-15</div></td>
+		<td height="20" bgcolor="#FFFFFF" class="table_body_td"><div align="center">3</div></td>
+        <td height="20" bgcolor="#FFFFFF"><div align="center" class="table_link"> <a href="ckinfo.html">出库</a> |<a href="kcinfo2.html"> 查看</a></div></td>
+      </tr>
+    </table></td>
+  </tr>
+  
+</table>
+
+</body>
+</html>

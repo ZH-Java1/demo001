@@ -1,0 +1,250 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/chili-1.7.pack.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/jquery.dimensions.js"></script>
+<script type="text/javascript" src="js/jquery.accordion.js"></script>
+<script language="javascript">
+	jQuery().ready(function(){
+		//var autoHeight = $('#accordion').accordion('option', 'autoHeight');
+		jQuery('#navigation').accordion({
+			header: '.head',
+			navigation1: true, 
+			event: 'click',
+			fillSpace: false,
+			animated: 'bounceslide'			
+		});
+	});
+</script>
+<style type="text/css">
+<!--
+body {
+	margin:0px;
+	padding:0px;
+	font-size: 12px;
+}
+#navigation {
+	margin:0px;
+	padding:0px;
+	width:147px;
+	height:100%
+}
+#navigation a.head {
+	cursor:pointer;
+	background:url(images/main_34.gif) no-repeat scroll;
+	display:block;
+	font-weight:bold;
+	margin:0px;
+	padding:5px 0 5px;
+	text-align:center;
+	font-size:12px;
+	text-decoration:none;
+}
+#navigation ul {
+	border-width:0px;
+	margin:0px;
+	padding:0px;
+	text-indent:0px;
+}
+#navigation li {
+	list-style:none; display:inline;
+}
+#navigation li li a {
+	display:block;
+	font-size:12px;
+	text-decoration: none;
+	text-align: left;
+	padding:3px;
+	color:#000;
+}
+#navigation li li a:hover {
+	background:url(images/tab_bg.gif) repeat-x;
+	border:solid 1px #adb9c2;
+}
+.td_font {font-size: 12px}
+
+a:link {color: #00FF00}		/* 未访问的链接 */
+a:visited {color: #00FF00}	/* 已访问的链接 */
+a:hover {color: #00FF00}	/* 鼠标移动到链接上 */
+a:active {color: #00FF00}
+-->
+</style>
+</head>
+<body>
+<table width="147" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr><td>
+<div style="height:100%">
+  <ul id="navigation">
+    <li> <a class="head" id="u1">用户管理</a>
+      <ul>
+        <li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="user/adduser.html" target="rightFrame">添加用户</a></td>
+                </tr>
+            </table>
+        </li>
+        <li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)'; "onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="user/userlist.html" target="rightFrame">查看用户</a></td>
+                </tr>
+            </table>
+        </li>
+        <li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)'; "onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="user/edituser.html" target="rightFrame">个人信息修改</a></td>
+                </tr>
+            </table>
+        </li>
+      </ul>
+    </li>
+    <li> <a class="head">商品管理</a>
+      <ul>
+      	<li>
+      	  <table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="goods/addgoods.html" target="rightFrame">添加商品</a></td>
+                </tr>
+          </table>
+ 		</li>
+		<li>
+      	  <table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="goods/goodsinput.html" target="rightFrame">商品信息导入</a></td>
+                </tr>
+          </table>
+ 		</li>
+        <li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="goods/goodslist.html" target="rightFrame">查看商品</a></td>
+                </tr>
+          </table>
+        </li>
+      </ul>
+    </li>
+	<li> <a class="head">商户管理</a>
+      <ul>
+        <li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)'; "onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="shoppe/addshoppe.html" target="rightFrame">商户信息添加</a></td>
+                </tr>
+            </table>
+        </li>
+		<li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)'; "onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="shoppe/shoppeinput.html" target="rightFrame">商户信息导入</a></td>
+                </tr>
+            </table>
+        </li>
+		<li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)'; "onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="shoppe/shoppelist.html" target="rightFrame">商户信息查询</a></td>
+                </tr>
+            </table>
+        </li>
+      </ul>
+    </li>
+    <li> <a class="head">库位管理</a>
+      <ul>
+	  	 <li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="store/addstore.html" target="rightFrame">添加库区</a></td>
+                </tr>
+          </table>
+        </li>
+        <li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="store/addstorage.html" target="rightFrame">添加货架</a></td>
+                </tr>
+          </table>
+        </li>
+		 <li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="store/addposition.html" target="rightFrame">添加区位</a></td>
+                </tr>
+          </table>
+        </li>
+        <li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="store/storelist.html" target="rightFrame">查看库位</a></td>
+                </tr>
+          </table>
+        </li>
+      </ul>
+    </li>
+    <li> <a class="head">库存管理</a>
+      <ul>
+        <li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="kc/addck.html" target="rightFrame">新建查扣</a></td>
+                </tr>
+           </table>
+        </li>
+        <li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="kc/addaj.html" target="rightFrame">新建案件</a></td>
+                </tr>
+           </table>
+        </li>
+		<li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="kc/kclist.html" target="rightFrame">未处理库存</a></td>
+                </tr>
+           </table>
+        </li>
+		<li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="kc/kclist1.html" target="rightFrame">已处理库存</a></td>
+                </tr>
+           </table>
+        </li>
+		<li>
+        	<table>
+            	<tr>
+                	<td style="padding-left:5px"><img src="images/main_40.gif" width="28" height="28"></td>
+                    <td class="td_font" style="cursor:hand" onMouseOver="this.style.backgroundImage='url(images/tab_bg.gif)';"onmouseout="this.style.backgroundImage='url()';this.style.borderStyle='none'"><a href="kc/kclist2.html" target="rightFrame">未处理预警</a></td>
+                </tr>
+           </table>
+        </li>			
+      </ul>
+    </li>
+    
+  </ul>
+</div>
+</td></tr></table>
+</body>
+</html>
