@@ -1,0 +1,26 @@
+#程序启动时指定环境
+spring:
+  profiles:
+    active: test
+---   #第一个环境dev
+spring:
+  profiles: dev #为该环境指定一个名称
+  
+server:
+  port: 8025
+  servlet:
+    context-path: /
+---
+spring:
+  profiles: test #为该环境指定一个名称
+server:
+  port: 8095
+  servlet:
+    context-path: /test
+---
+spring:
+  profiles: pro #为该环境指定一个名称
+server:
+  port: 9000
+  servlet:
+    context-path: /
